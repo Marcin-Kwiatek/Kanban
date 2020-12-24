@@ -1,0 +1,36 @@
+body
+{
+    background-color:black;
+    color: aliceblue;
+}
+.list
+{
+    width: 200px;
+    min-height: 500px;
+    background-color: gray;
+    padding-top: 5px;
+}
+.task
+{
+    width: calc(100% - 10px);
+    min-height: 40px;
+    background-color: lightgray;
+    color: black;
+    margin: 5px;
+}
+.add-task-button
+{
+    width: 100%;
+    min-height: 40px;
+    text-align: left;
+    cursor: pointer;
+    color: #5e6c84;
+}
+.add-task-button:hover
+{
+    color: #4d5b73;
+}
+header
+{
+    margin-bottom: 10px;
+}
