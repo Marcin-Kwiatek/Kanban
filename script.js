@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", onDOMLoaded)
 
 
-function onDOMLoaded(event)
-{
+function onDOMLoaded(event) {
     var addTaskButton=document.getElementById("add-task-button");
     addTaskButton.onclick = function (event) {
         addTaskButton.style.display = "none";
