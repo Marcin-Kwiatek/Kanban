@@ -13,8 +13,16 @@ function onDOMLoaded(event) {
             if (keyCode == "Escape") {
                 addTaskTextarea.style.display = "none";
                 addTaskButton.style.display = "block";
-            } else {
-                console.log("something else click")
+            }
+            if (keyCode == "Enter"){
+                var nextTaskTitle = addTaskTextarea.value
+                var newDiv = document.createElement("div")
+                newDiv.innerHTML = nextTaskTitle
+                newDiv.classList.add("task")
+                var parentNode = document.getElementById("list")
+                parentNode.insertBefore(newDiv,addTaskTextarea)
+                addTaskTextarea.value=null
+                keyDownEvent.preventDefault()
             }
         }
         
