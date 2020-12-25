@@ -9,6 +9,8 @@ body
     min-height: 500px;
     background-color: gray;
     padding-top: 5px;
+    float: left;
+    margin-right: 30px;
 }
 .task
 {
