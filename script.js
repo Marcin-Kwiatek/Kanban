@@ -11,7 +11,8 @@ function onDOMLoaded(event) {
         addTaskTextarea.onkeydown = function(keyDownEvent) {
             var keyCode = keyDownEvent.code;
             if (keyCode == "Escape") {
-                console.log("esc click")
+                addTaskTextarea.style.display = "none";
+                addTaskButton.style.display = "block";
             } else {
                 console.log("something else click")
             }
