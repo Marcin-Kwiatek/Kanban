@@ -15,14 +15,18 @@ function onDOMLoaded(event) {
                 addTaskButton.style.display = "block";
             }
             if (keyCode == "Enter"){
+                keyDownEvent.preventDefault()
                 var nextTaskTitle = addTaskTextarea.value
+                if (nextTaskTitle==""){
+                   return 
+                }
+                
                 var newDiv = document.createElement("div")
                 newDiv.innerHTML = nextTaskTitle
                 newDiv.classList.add("task")
                 var parentNode = document.getElementById("list")
                 parentNode.insertBefore(newDiv,addTaskTextarea)
                 addTaskTextarea.value=null
-                keyDownEvent.preventDefault()
             }
         }
         
