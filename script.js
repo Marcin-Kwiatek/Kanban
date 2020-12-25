@@ -1,7 +1,18 @@
 document.addEventListener("DOMContentLoaded", onDOMLoaded)
 
 function onDOMLoaded(event) {
-    for (let i = 0; i <= 1; i++) {       
+    let kanban = document.getElementById("kanban")
+    for (let i = 0; i <= 2; i++) { 
+        kanban.innerHTML+=
+    `<div id="list${i}" class="list">
+        <div class="task">Zadanie 1</div>
+        <div class="task">Zadanie 2</div>
+        <textarea id="add-task-textarea${i}" class="add-task-textarea" placeholder="Wpisz nazwę zadania"></textarea>
+        <button class="add-task-button" id="add-task-button${i}">+ Dodaj zadanie</button>
+        </div>`
+    }
+
+    for (let i = 0; i <= 2; i++) { 
         let addTaskTextarea=document.getElementById("add-task-textarea"+i)
         let addTaskButton=document.getElementById("add-task-button"+i)
         
