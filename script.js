@@ -44,5 +44,10 @@ function onDOMLoaded(event) {
             addTaskTextarea.focus()
         }
     }
+        
+    let addListButton = document.getElementById("add-list-button")
+    addListButton.onclick = function(addListButtonclickevent){
+        console.log("super")
+    }
 }
 
